@@ -21,7 +21,7 @@ textarea = driver.find_element_by_css_selector(".textarea")
 textarea.send_keys("get()")
 time.sleep(5)
 
-# Найдем кнопку, которая отправляет введенное решение
+# Найдем кнопку, которая отправденное решение
 submit_button = driver.find_element_by_css_selector(".submit-submission")
 
 # Скажем драйверу, что нужно нажать на кнопку. После этой команды мы должны увидеть сообщение о правильном ответе
