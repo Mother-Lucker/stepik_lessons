@@ -1,0 +1,5 @@
+#name
+//*[@name="last name"]
+.third
+//*[@fourth_own_attr="fourth_value"]
+//*[@class="form-control second"]
