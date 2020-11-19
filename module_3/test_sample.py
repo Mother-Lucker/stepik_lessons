@@ -12,7 +12,7 @@ submit_registration_button = '[name="registration_submit"]'
 def test_registration_new_user_with_valid_credentials():
     try:
         # Data
-        valid_email = "test21131@gmail.com"
+        valid_email = "test21431@gmail.com"
         valid_password = "Newpassword19283746"
         success_registration_link = "http://selenium1py.pythonanywhere.com/ru/"
 
