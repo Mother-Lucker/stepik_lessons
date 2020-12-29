@@ -12,11 +12,11 @@ class ProductPage(BasePage):
     def check_add_to_basket_notification(self, expected_product_name, expected_notification_template):
         expected_notification_text = expected_notification_template.format(expected_product_name)
         actual_notification_text = self.browser.find_element(*ProductPageLocators.SUCCESS_MESSAGE_NOTIFICATION).text
-        print("Actual product name is " + actual_notification_text,
-              "Expected product name is " + expected_notification_text)
-        assert actual_notification_text == expected_notification_text
+        assert actual_notification_text == expected_notification_text, "result does not match. Expected {}, actual {}".format(
+            expected_product_name, actual_notification_text)
 
     def check_product_and_basket_price(self, expected_product_price):
         actual_product_price = self.browser.find_element(By.CSS_SELECTOR, ".alertinner>p>strong").text
-        print("Actual product price is " + actual_product_price, "Expected product price is " + expected_product_price)
-        assert actual_product_price == expected_product_price
+        # print("Actual product price is " + actual_product_price, "Expected product price is " + expected_product_price)
+        assert actual_product_price == expected_product_price, "price does not match. Expected price is {}, actual price is {}".format(
+            expected_product_price, actual_product_price)

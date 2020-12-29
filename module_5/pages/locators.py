@@ -11,5 +11,5 @@ class LoginPageLocators():
 
 
 class ProductPageLocators():
-    ADD_TO_BASKET_BTN = (By.CSS_SELECTOR, '[value="Добавить в корзину"]')
+    ADD_TO_BASKET_BTN = (By.CSS_SELECTOR, '.btn.btn-lg.btn-primary.btn-add-to-basket')
     SUCCESS_MESSAGE_NOTIFICATION = (By.CSS_SELECTOR, ".alert:nth-child(1) .alertinner")
